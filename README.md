@@ -1,4 +1,3 @@
-# Grid-Maker
 # Group Grid Maker Website
 # Group Members
 Michelle Khanan,
