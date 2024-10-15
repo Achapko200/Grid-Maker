@@ -1,10 +1,21 @@
 // Declare global variables
-let numRows = 2; // Start with 2 rows based on the example table
-let numCols = 3; // Start with 3 columns based on the example table
-let colorSelected = "SELECT"; // Default selected color
+let numRows = 2; // Starting with 2 rows as per your initial table
+let numCols = 3; // Starting with 3 columns as per your initial table
+let colorSelected = "SELECT"; // Default color selected
 
 // Get the table element
 const grid = document.getElementById("grid");
+
+// Initialize the grid with click events on existing cells
+function initializeGrid() {
+    const cells = grid.getElementsByTagName("td");
+    for (let cell of cells) {
+        cell.onclick = () => colorCell(cell); // Add click event to color the cell
+    }
+}
+
+// Call initializeGrid once to set up existing cells
+initializeGrid();
 
 // Add a row
 function addR() {
@@ -70,7 +81,7 @@ function colorCell(cell) {
 function fillU() {
     const cells = grid.getElementsByTagName("td");
     for (let cell of cells) {
-        if (!cell.style.backgroundColor) { // Check if cell is uncolored
+        if (!cell.style.backgroundColor) { // Check if the cell is uncolored
             cell.style.backgroundColor = colorSelected;
         }
     }
