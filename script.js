@@ -1,6 +1,6 @@
 // Declare global variables
-let numRows = 2; // Starting with 2 rows as per your initial table
-let numCols = 3; // Starting with 3 columns as per your initial table
+let numRows = 0; 
+let numCols = 0; 
 let colorSelected = "SELECT"; // Default color selected
 
 // Get the table element
