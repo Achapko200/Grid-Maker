@@ -11,3 +11,4 @@ A dynamic grid creation tool that allows users to add and remove rows and column
 - Fill or clear multiple cells with the selected color.
 
 ### GitHub Pages website
+https://michellekhanan.github.io/Grid-Maker/
